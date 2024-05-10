@@ -1,0 +1,160 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    width: 1440px;
+}
+
+.content-container {
+    border: none;
+    display: flex; 
+    align-items: stretch;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sedan-container {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+}
+
+.suv-container {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-container {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+
+.sedan-container, .suv-container, .luxury-container{
+    padding: 35px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+}
+
+.title {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 0;
+}
+
+
+.button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 40px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsla(31, 77%, 52%, 0.7);
+    font-family: "Lexend Deca", sans-serif;
+    text-decoration: none;
+    margin-top: 60px;
+}
+
+.button a:hover, .button a:active {
+    background-color: hsla(31, 77%, 52%, 0.7);
+    border: 1px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+}
+
+#suv-button a {
+    color: hsla(184, 100%, 22%, 0.7);
+}
+
+#luxury-button a {
+    color: hsla(179, 100%, 13%, 0.8);
+}
+
+
+#suv-button a:hover, #suv-button a:active {
+    background-color: hsla(184, 100%, 22%, 0.7);
+    border: 1px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+}
+
+#luxury-button a:hover, #luxury-button a:active {
+    background-color: hsla(179, 100%, 13%, 0.8);
+    border: 1px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 11px; 
+    text-align: center;
+    width: 100%;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 375px) {
+    .content-container {
+        border: none;
+        display: block; 
+        justify-content: column;
+        width: 90%;
+        margin-top: 100%;
+        margin-bottom: 100%;
+    }
+    .sedan-container {
+        border-top-left-radius: 10px; 
+        border-top-right-radius: 10px; 
+        border-bottom-left-radius: 0;
+    }
+    .luxury-container {
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0; 
+        border-bottom-right-radius: 10px; 
+        border-bottom-left-radius: 10px;
+    }
+
+    .attribution {
+        margin-top: 300px;
+    }
+}
+
+ @media (min-width: 376px) and (max-width: 1024px){
+    .content-container {
+        border: none;
+        display: block; 
+        justify-content: column;
+        width: 85%;
+        margin: auto;
+        margin-top: 30%;
+        margin-bottom: 100%;
+    }
+    .sedan-container {
+        border-top-left-radius: 10px; 
+        border-top-right-radius: 10px; 
+        border-bottom-left-radius: 0;
+    }
+    .luxury-container {
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0; 
+        border-bottom-right-radius: 10px; 
+        border-bottom-left-radius: 10px;
+    }
+
+    .attribution {
+         margin-top: 300px;
+    }
+}
